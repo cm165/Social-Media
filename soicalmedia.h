@@ -9,11 +9,12 @@ template<class A>
 //2b
 class SocialMediaAccount {
     public:
-    SocialMediaAccount();
+    SocialMediaAccount(); 
     SocialMediaAccount(A Handler, bool isPrivate = true ) {
         handler = Handler;
         privateAccount = isPrivate;
-
+        followersCount = 0;
+        followedCount = 0;
     }
     //getters and setters
     void setHandler(A handler);

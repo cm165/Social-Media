@@ -15,40 +15,51 @@ struct Profile {
 
 };
 
-
 //6
     int main() {
         SocialMediaAccount<string> p1("Jonny",  false);
         cout<< "Followers: "<<endl;
+        p1.addFollower("jasondabest");
+        p1.displayFollowers();
+        cout<< endl;
         cout <<"_____________________________________________________________________" << endl;
-       p1.addFollower("jasondabest");
 
         cout<< "Following: "<< endl;
         p1.addFollowed("jmoney_cold");
         p1.addFollowed("jimmyjohns");
         p1.addFollowed("worldstar");
-        cout <<"_____________________________________________________________________" << endl;
+
         p1.displayFollowed();
 cout <<endl<<"_____________________________________________________________________" << endl;
         //twitter
+        cout << "Twitter: ";
+        cout << endl;
         Twitter<string> t1("Cassidy", false);
         t1.addFollower("selena.see");
         t1.addFollowed("superman.isreal");
         t1.RT();
         t1.getRetweetCount();
+        cout<< "Followers: "<<endl;
         t1.displayFollowers();
+        cout<< endl;
+        cout <<"_____________________________________________________________________" << endl;
+        cout<< "Following: "<< endl;
         t1.displayFollowed();
+        cout<< endl;
+        cout <<"_____________________________________________________________________" << endl;
         //insta
+        cout<< "Instagram: "<< endl<< endl;
         Instagram<string> I1("moonloight", false);
         I1.addFollower("make.moneyfast");
         I1.addFollowed("someoneover_rainbow");
         I1.Like();
-
+        cout<< "Followers: "<< endl;
+        I1.displayFollowers();
+        cout<< endl;
+        cout <<"_____________________________________________________________________" << endl;
+        cout<< "Following: "<< endl;
         I1.displayFollowed();
+        cout<< endl;
+        cout <<"_____________________________________________________________________" << endl;
         return 0;
     }
-
-// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.
